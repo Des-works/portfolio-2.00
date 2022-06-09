@@ -1,0 +1,180 @@
+/* =========contact section styling========= */
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+    font-size: 15px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+    font-size: 15px;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: var(--sub_tex_color);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: var(--lines-1);
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right .input-container {
+    position: relative;
+    margin: 1rem 0;
+}
+.contact .right  .input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(125, 120, 146);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-weight: 400;
+  z-index: 500;
+  transition: 0.5s;
+}
+.contact .right .input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+.contact .right .input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  padding: 0 0.4rem;
+  color: transparent;
+  z-index: 100;
+}
+.contact .right .input-container span:before,
+.contact .right .input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color:var(--white_color);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact .right .input-container span:before {
+  left: 50%;
+}
+.contact .right .input-container span:after {
+  right: 50%;
+}
+.contact .right .input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 15px;
+}
+.contact .right .input-container.focus span:before,
+.contact .right .input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+.contact .right form .button-area button{
+    display: inline-block;
+    background: var(--main_color);
+    color: var(--white_color);
+    background:none;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 50px;
+    font-weight: 200;
+    border-radius: 6px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--borders);
+    transition: all 0.3s ease;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.contact .right form .button-area button::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1px;
+    background:var(--main_color);
+    height:85%;
+    width: 95%;
+    z-index: -1;
+    transition: .2s linear;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.contact .right form .button-area button:hover{
+    color: rgb(125, 120, 146);
+    background: none;
+}
+.contact .right form .button-area button:hover:before{
+    top:100%;
+    transform: translate(-50%, 100%);
+}

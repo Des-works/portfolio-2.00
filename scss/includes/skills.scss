@@ -1,0 +1,59 @@
+/*=====SKILLS STYLING=====*/ 
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .column .box{
+    flex:1 1 40rem;
+    background-color: var(--white_color);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:.5rem 1.5rem;
+    margin:1.5rem;
+}
+.skills .skills-content .column .box .progress{
+    padding:1rem 0;
+}
+.skills .skills-content .column .box .progress h3{
+    font-size: 1.7rem;
+    color:var(--back_color);
+    display: flex;
+    justify-content: space-between;
+}
+.skills .skills-content .column .box .progress .bar{
+    height: 2.5rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--borders);
+    padding:.5rem;
+    margin:1rem 0;
+}
+.skills .skills-content .column .box .progress .bar span{
+    height: 100%;
+    border-radius: .3rem;
+    background-color: var(--sub_tex_color);
+    display: block;
+}
+.skills .skills-content .column .box:nth-child(1) .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+.skills .skills-content .column .box:nth-child(1) .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.skills .skills-content .column .box:nth-child(1) .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+.skills .skills-content .column .box:nth-child(1) .progress:nth-child(4) .bar span{
+    width: 70%;
+}
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+    font-size: 15px;
+}

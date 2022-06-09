@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition:all .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}

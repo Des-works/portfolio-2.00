@@ -1,0 +1,90 @@
+/* menu btn styling */
+.menu-btn{
+    color: var(--white_color);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.menu-btn:hover{
+    position: relative;
+    color: var(--white_color);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.menu .menu-link:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 2rem;
+    background-color: var(--body_bg);
+}
+
+/*=========SCROLL UP BTN=============*/ 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    cursor: pointer;
+    background: var(--main_color);
+    color:var(--white_color);
+    background:none;
+    text-align: center;
+    font-size: 30px;
+    right: 30px;
+    bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 200;
+    opacity: 0;
+    border-radius: 10px;
+    z-index: 9999;
+    overflow: hidden;
+    pointer-events: none;
+    border: 2px solid var(--borders);
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background:var(--main_color);
+    height:85%;
+    width: 95%;
+    z-index: -1;
+    transition: .2s linear;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.scroll-up-btn:hover{
+    color: var(--white_color);
+    background: none;
+    filter: brightness(90%);
+}
+.scroll-up-btn:hover:before{
+    top:100%;
+    transform: translate(-50%, 100%);
+}
