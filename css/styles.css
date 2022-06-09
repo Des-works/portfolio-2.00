@@ -1080,7 +1080,7 @@ footer {
   right: 0;
   background: var(--lines-1);
   height: auto;
-  width: 100vw;
+  width: 100%;
   font-family: "";
   color: var(--white_color);
   padding-top: 40px;
