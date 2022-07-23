@@ -684,7 +684,7 @@ section .title::after {
 }
 
 .skills .skills-content .column .box:nth-child(1) .progress:nth-child(3) .bar span {
-  width: 65%;
+  width: 75%;
 }
 
 .skills .skills-content .column .box:nth-child(1) .progress:nth-child(4) .bar span {
