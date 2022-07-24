@@ -14,6 +14,8 @@ $(window).scroll(() => {
       $('.scroll-up-btn').removeClass("show");
     }
   });
+
+  
   // AOS Instance
   AOS.init();
   // slide-up script
@@ -26,11 +28,15 @@ $(window).scroll(() => {
       // applying again smooth scroll on menu items click
       $('html').css("scrollBehavior", "smooth");
   });
+
+
   // toggle menu/navbar script
   $('.menu-btn').click(function(){
       $('.navbar .menu').toggleClass("active");
       $('.menu-btn i').toggleClass("active");
   });
+
+
   // typing text animation script
   var typed = new Typed(".typing", {
       strings: [ "Developer", "Designer", "Freelancer"],
@@ -44,6 +50,8 @@ $(window).scroll(() => {
       backSpeed: 60,
       loop: true
   });
+
+  
   // flitter
     $('.portfolio .button-container .btn').click(function() { 
       let filter = $(this).attr('data-filter'); 
